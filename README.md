@@ -10,25 +10,24 @@ OR -->
   
 Remake darknet using:
   
-  ### clone darknet repo
-  !git clone https://github.com/AlexeyAB/darknet install_directory
+  ### 1. Clone darknet
+    > !git clone https://github.com/AlexeyAB/darknet install_directory
 
-  %cd install_directory/darknet
-  ### change makefile to have OPENCV and LIBSO enabled for NON GPU
-  !sed -i 's/OPENCV=0/OPENCV=1/' Makefile
+    > %cd install_directory/darknet
+  ### 2. Change makefile to have OPENCV and LIBSO enabled for NON GPU
+    > !sed -i 's/OPENCV=0/OPENCV=1/' Makefile
+    > !sed -i 's/LIBSO=0/LIBSO=1/' Makefile
+
+  ### 3. Make darknet
+    > !make
+
+  ### 4. Get model Weight
+    > !wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1V3vsIaxAlGWvK4Aar9bAiK5U0QFttKwq' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1V3vsIaxAlGWvK4Aar9bAiK5U0QFttKwq" -O yolov4-csp.weights && rm -rf /tmp/cookies.txt
   
-  !sed -i 's/LIBSO=0/LIBSO=1/' Makefile
-
-  ### make darknet
-  !make
-
-  ### Get model Weight
-  !wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1V3vsIaxAlGWvK4Aar9bAiK5U0QFttKwq' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1V3vsIaxAlGWvK4Aar9bAiK5U0QFttKwq" -O yolov4-csp.weights && rm -rf /tmp/cookies.txt
-  
-## Note
+## NOTE
 if succesfull, will the detection of test image will return detection result, example:
 
-[('dog',
+> [('dog',
   '91.28',
   (107.40998840332031,
    368.1647033691406,
@@ -44,6 +43,7 @@ if succesfull, will the detection of test image will return detection result, ex
    157.2364044189453,
    250.5433807373047))]time: 20.5 ms (started: 2022-03-09 06:06:51 +00:00)
    
-##Link to collab Demo
+## LINK TO COLLAB DEMO
 https://colab.research.google.com/drive/1ccW44_NvrsnADvlRGVCa7cBdCnsc7Lm8?usp=sharing
-  
+
+#### notes by Nabilala
