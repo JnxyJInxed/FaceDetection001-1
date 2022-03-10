@@ -11,21 +11,21 @@ OR -->
 Remake darknet using:
   
   ### 1. Clone darknet
-    > !git clone https://github.com/AlexeyAB/darknet install_directory
+    !git clone https://github.com/AlexeyAB/darknet
 
-    > %cd install_directory/darknet
+    %cd darknet
   ### 2. Change makefile to have OPENCV and LIBSO enabled for NON GPU
-    > !sed -i 's/OPENCV=0/OPENCV=1/' Makefile
-    > !sed -i 's/LIBSO=0/LIBSO=1/' Makefile
+    !sed -i 's/OPENCV=0/OPENCV=1/' Makefile
+    !sed -i 's/LIBSO=0/LIBSO=1/' Makefile
 
   ### 3. Make darknet
-    > !make
+    !make
 
   ### 4. Get model Weight
-    > !wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1V3vsIaxAlGWvK4Aar9bAiK5U0QFttKwq' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1V3vsIaxAlGWvK4Aar9bAiK5U0QFttKwq" -O yolov4-csp.weights && rm -rf /tmp/cookies.txt
+    !wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1V3vsIaxAlGWvK4Aar9bAiK5U0QFttKwq' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1V3vsIaxAlGWvK4Aar9bAiK5U0QFttKwq" -O yolov4-csp.weights && rm -rf /tmp/cookies.txt
   
 ## NOTE
-if succesfull, will the detection of test image will return detection result, example:
+if installation succesfull, the detection of test image will return detection result, example:
 
 > [('dog',
   '91.28',
