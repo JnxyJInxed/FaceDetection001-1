@@ -11,10 +11,6 @@ import html
 import time
 import matplotlib.pyplot as plt
 
-#import darknet-post make(?)
-import sys
-sys.path.insert(1, './lib/noGPU/darknet')
-
 from darknet import *
 
 # load in our YOLOv4 architecture network
