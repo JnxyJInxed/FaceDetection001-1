@@ -1,7 +1,5 @@
 # import dependencies
 from IPython.display import display, Javascript, Image
-from google.colab.output import eval_js
-from google.colab.patches import cv2_imshow
 from base64 import b64decode, b64encode
 import cv2
 import numpy as np
