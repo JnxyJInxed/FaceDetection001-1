@@ -1,0 +1,6 @@
+opencv-contrib-python==4.1.2.30
+opencv-python==4.1.2.30
+numpy==1.21.5
+Pillow==7.1.2
+html5lib==1.0.1
+matplotlib==3.2.2
