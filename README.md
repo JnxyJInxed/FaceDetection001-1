@@ -28,8 +28,7 @@ Remake darknet using:
       pip install Requirement.txt
    
   ### 6. Run the test0x.py
-      copy the test0x.py to /darknet/
-      run :D
+   copy the test0x.py to /darknet/ and run :D
   
 ## NOTE
 ### Darknet Installation Parameter
