@@ -71,5 +71,6 @@ https://colab.research.google.com/drive/1ccW44_NvrsnADvlRGVCa7cBdCnsc7Lm8?usp=sh
 ![Capture5](https://user-images.githubusercontent.com/64402575/158035400-5ef3553e-3d75-4230-ae5e-27b3393d9690.PNG)
 
 ### Program FAILED 'run' result
-![Capture4](https://user-images.githubusercontent.com/64402575/158035406-1b34bfd5-d897-4d32-a6b9-865dec691311.PNG)
+![image](https://user-images.githubusercontent.com/64402575/158035734-f9291a60-8934-468c-88d1-5f5666a06c3b.png)
+
 #### notes by Nabilala
