@@ -22,7 +22,7 @@ Remake darknet using:
     !make
 
   ### 4. Get model Weight
-   download and copy 'yolov4.weights' to '/darknet/'
+   download https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights and copy 'yolov4.weights' to '/darknet/'
   
   ### 5. Install requirement.txt
       pip install Requirement.txt
